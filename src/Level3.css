@@ -1,0 +1,193 @@
+/* Container for images and annotations */
+.level1-container-unique {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+   
+  }
+  
+  .level1-images-row-unique {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  /* .image-container img {
+    height: 500px; 
+    width: auto; 
+    object-fit: cover; 
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+} */
+  
+  .responsive-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Annotation styling */
+  .annotation {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    color:black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.6rem;
+    white-space: nowrap;
+  }
+  
+  /* Example positions for annotations */
+
+  .annotation-00 {
+    top: 53%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
+  .annotation-01 {
+    top: 73%;
+    left: 77%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
+  .annotation-1 {
+    top: 10%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  
+  .annotation-2 {
+    top: 13%;
+    left: 41%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  
+  .annotation-3 {
+    top: 48%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  
+  .annotation-4 {
+    top: 86%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  
+  .annotation-5 {
+    top: 57%;
+    left: 88%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  
+  .annotation-6 {
+    top: 23%;
+    left: 62%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
+  .annotation-7 {
+    top: 23%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
+  .annotation-8 {
+    top: 45%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
+  .annotation-9 {
+    top: 73%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
+  .annotation-10 {
+    top: 67%;
+    left: 73%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .annotation {
+      font-size: 0.8rem;
+    }
+  
+    .image-container {
+      width: 45%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .annotation {
+      font-size: 0.7rem;
+    }
+  
+    .image-container {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+/* Tooltip styling */
+.annotation:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%; /* Tooltip appears above the annotation */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 0.7rem;
+  white-space: nowrap;
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+  z-index: 10; /* Ensure tooltip appears above other elements */
+}
+
+.annotation::after {
+  content: '';
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+figure {
+  display: inline-block;
+  text-align: center;
+  width: 30%; /* Adjust width as needed */
+}
+
+figcaption {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #333;
+  text-align: center;
+}
+
+  
