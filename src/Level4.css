@@ -16,11 +16,13 @@
     margin-top: 10px;
   }
   
-  .image-container {
-    position: relative;
-    width: 30%;
-    margin: 0 10px;
-  }
+  /* .image-container img {
+    height: 500px; 
+    width: auto; 
+    object-fit: cover; 
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+} */
   
   .responsive-img {
     width: 100%;
@@ -42,90 +44,156 @@
   
   /* Example positions for annotations */
 
-  .annotationn-00 {
+  /* IMAGE2 */
+
+  .annotation-00 {
     top: 53%;
-    left: 49%;
+    left: 53%;
     transform: translate(-50%, -50%);
     cursor: pointer;
   }
 
-  .annotationn-01 {
-    top: 70%;
+  .annotation-01 {
+    top: 73%;
     left: 77%;
     transform: translate(-50%, -50%);
     cursor: pointer;
   }
 
-  .annotation-001 {
-    top: 10%;
+  .annotation-02 {
+    top: 53%;
     left: 53%;
     transform: translate(-50%, -50%);
     cursor: pointer;
   }
-  
-  .annotation-002 {
+
+  .annotation-03 {
+    top: 73%;
+    left: 77%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
+
+  .annotation-04 {
+    top: 53%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
+  .annotation-05 {
+    top: 73%;
+    left: 77%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
+
+  .annotation-06 {
+    top: 53%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
+  .annotation-07 {
+    top: 73%;
+    left: 77%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
+
+  .annotation-08 {
+    top: 53%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
+  .annotation-09{
+    top: 73%;
+    left: 77%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
+  .annotation-10 {
+    top: 53%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
+  .annotation-11 {
+    top: 73%;
+    left: 77%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
+
+
+  /* IMAGE1 */
+
+
+  .annotation-1 {
     top: 13%;
-    left: 41%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-  }
-  
-  .annotation-003 {
-    top: 48%;
-    left: 49%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-  }
-  
-  .annotation-004 {
-    top: 81%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-  }
-  
-  .annotation-005 {
-    top: 57%;
-    left: 88%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-  }
-  
-  .annotation-006 {
-    top: 23%;
-    left: 62%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-  }
-
-  .annotation-007 {
-    top: 23%;
-    left: 45%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-  }
-
-  .annotation-008 {
-    top: 45%;
     left: 52%;
     transform: translate(-50%, -50%);
     cursor: pointer;
   }
-
-  .annotation-009 {
-    top: 73%;
-    left: 53%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-  }
-
-  .annotation-0010 {
-    top: 67%;
-    left: 73%;
+  
+  .annotation-2 {
+    top: 84%;
+    left: 83%;
     transform: translate(-50%, -50%);
     cursor: pointer;
   }
   
+  .annotation-3 {
+    top: 86%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  
+  .annotation-4 {
+    top: 67%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  
+  .annotation-5 {
+    top: 41%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  
+  .annotation-6 {
+    top: 26.5%;
+    left: 36%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
+  .annotation-7 {
+    top: 18%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
+  .annotation-8 {
+    top: 11%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
   /* Responsive adjustments */
   @media (max-width: 768px) {
     .annotation {
