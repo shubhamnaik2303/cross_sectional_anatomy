@@ -10,31 +10,31 @@ const Level3 = () => {
       <div className="level1-images-row-unique">
         <figure className="image-container">
           <img src="/images/Level4_1.gif" alt="Brain Image 1" className="responsive-img" />
-          <div className="annotation annotation-1" data-tooltip="Perpendicular Plate Ethmoid">1</div>
-          <div className="annotation annotation-2" data-tooltip="Parietal Bone">5</div>
-          <div className="annotation annotation-3" data-tooltip="Superior Saggital Sinus">6</div>
-          <div className="annotation annotation-4" data-tooltip="Cerebellum">7</div>
-          <div className="annotation annotation-5" data-tooltip="Hypothalamus">8</div>
-          <div className="annotation annotation-6" data-tooltip="Anterior Clinoid Process">9</div>
-          <div className="annotation annotation-7" data-tooltip="Lateral Rectus">10</div>
-          <div className="annotation annotation-8" data-tooltip="Vitreous of Eye">11</div>
+          <div className="annotation annotation-4_1" data-tooltip="Perpendicular Plate Ethmoid">1</div>
+          <div className="annotation annotation-4_2" data-tooltip="Parietal Bone">5</div>
+          <div className="annotation annotation-4_3" data-tooltip="Superior Saggital Sinus">6</div>
+          <div className="annotation annotation-4_4" data-tooltip="Cerebellum">7</div>
+          <div className="annotation annotation-4_5" data-tooltip="Hypothalamus">8</div>
+          <div className="annotation annotation-4_6" data-tooltip="Anterior Clinoid Process">9</div>
+          <div className="annotation annotation-4_7" data-tooltip="Lateral Rectus">10</div>
+          <div className="annotation annotation-4_8" data-tooltip="Vitreous of Eye">11</div>
           {/* Description for Image 1 */}
           <figcaption>Figure 1: MRI Appearance</figcaption>
         </figure>
 
         <figure className="image-container">
           <img src="/images/Level4_2.png" alt="Brain Image 2" className="responsive-img" />
-          <div className="annotation annotation-01" data-tooltip="Perpendicular Plate Ethmoid">1</div>
-          <div className="annotation annotation-02" data-tooltip="Ethmoid Sinuses">2</div>
-          <div className="annotation annotation-03" data-tooltip="Infundibulum">3</div>
-          <div className="annotation annotation-04" data-tooltip="Temporalis">4</div>
-          <div className="annotation annotation-05" data-tooltip="Parietal Bone">5</div>
-          <div className="annotation annotation-06" data-tooltip="Superior Saggital Sinus">6</div>
-          <div className="annotation annotation-07" data-tooltip="Cerebellum">7</div>
-          <div className="annotation annotation-08" data-tooltip="Hypothalamus">8</div>
-          <div className="annotation annotation-09" data-tooltip="Anterior Clinoid Process">9</div>
-          <div className="annotation annotation-10" data-tooltip="Lateral Rectus">10</div>
-          <div className="annotation annotation-11" data-tooltip="Vitreous of Eye">11</div>
+          <div className="annotation annotation-4_01" data-tooltip="Perpendicular Plate Ethmoid">1</div>
+          <div className="annotation annotation-4_02" data-tooltip="Ethmoid Sinuses">2</div>
+          <div className="annotation annotation-4_03" data-tooltip="Infundibulum">3</div>
+          <div className="annotation annotation-4_04" data-tooltip="Temporalis">4</div>
+          <div className="annotation annotation-4_05" data-tooltip="Parietal Bone">5</div>
+          <div className="annotation annotation-4_06" data-tooltip="Superior Saggital Sinus">6</div>
+          <div className="annotation annotation-4_07" data-tooltip="Cerebellum">7</div>
+          <div className="annotation annotation-4_08" data-tooltip="Hypothalamus">8</div>
+          <div className="annotation annotation-4_09" data-tooltip="Anterior Clinoid Process">9</div>
+          <div className="annotation annotation-4_10" data-tooltip="Lateral Rectus">10</div>
+          <div className="annotation annotation-4_11" data-tooltip="Vitreous of Eye">11</div>
           {/* Description for Image 2 */}
           <figcaption>Figure 2: Cadaver Appearance</figcaption>
         </figure>

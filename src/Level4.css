@@ -46,43 +46,23 @@
 
   /* IMAGE2 */
 
-  .annotation-00 {
+  
+
+  .annotation-4_01 {
+    top: 23%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
+  .annotation-4_02 {
     top: 53%;
     left: 53%;
     transform: translate(-50%, -50%);
     cursor: pointer;
   }
 
-  .annotation-01 {
-    top: 73%;
-    left: 77%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-  }
-
-  .annotation-02 {
-    top: 53%;
-    left: 53%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-  }
-
-  .annotation-03 {
-    top: 73%;
-    left: 77%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-  }
-
-
-  .annotation-04 {
-    top: 53%;
-    left: 53%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-  }
-
-  .annotation-05 {
+  .annotation-4_03 {
     top: 73%;
     left: 77%;
     transform: translate(-50%, -50%);
@@ -90,14 +70,14 @@
   }
 
 
-  .annotation-06 {
+  .annotation-4_04 {
     top: 53%;
     left: 53%;
     transform: translate(-50%, -50%);
     cursor: pointer;
   }
 
-  .annotation-07 {
+  .annotation-4_05 {
     top: 73%;
     left: 77%;
     transform: translate(-50%, -50%);
@@ -105,28 +85,43 @@
   }
 
 
-  .annotation-08 {
+  .annotation-4_06 {
     top: 53%;
     left: 53%;
     transform: translate(-50%, -50%);
     cursor: pointer;
   }
 
-  .annotation-09{
+  .annotation-4_07 {
     top: 73%;
     left: 77%;
     transform: translate(-50%, -50%);
     cursor: pointer;
   }
 
-  .annotation-10 {
+
+  .annotation-4_08 {
     top: 53%;
     left: 53%;
     transform: translate(-50%, -50%);
     cursor: pointer;
   }
 
-  .annotation-11 {
+  .annotation-4_09{
+    top: 73%;
+    left: 77%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
+  .annotation-4_10 {
+    top: 53%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
+  .annotation-4_11 {
     top: 73%;
     left: 77%;
     transform: translate(-50%, -50%);
@@ -138,56 +133,56 @@
   /* IMAGE1 */
 
 
-  .annotation-1 {
+  .annotation-4_1 {
     top: 13%;
     left: 52%;
     transform: translate(-50%, -50%);
     cursor: pointer;
   }
   
-  .annotation-2 {
+  .annotation-4_2 {
     top: 84%;
     left: 83%;
     transform: translate(-50%, -50%);
     cursor: pointer;
   }
   
-  .annotation-3 {
+  .annotation-4_3 {
     top: 86%;
     left: 47%;
     transform: translate(-50%, -50%);
     cursor: pointer;
   }
   
-  .annotation-4 {
+  .annotation-4_4 {
     top: 67%;
     left: 46%;
     transform: translate(-50%, -50%);
     cursor: pointer;
   }
   
-  .annotation-5 {
+  .annotation-4_5 {
     top: 41%;
     left: 46%;
     transform: translate(-50%, -50%);
     cursor: pointer;
   }
   
-  .annotation-6 {
+  .annotation-4_6 {
     top: 26.5%;
     left: 36%;
     transform: translate(-50%, -50%);
     cursor: pointer;
   }
 
-  .annotation-7 {
+  .annotation-4_7 {
     top: 18%;
     left: 34%;
     transform: translate(-50%, -50%);
     cursor: pointer;
   }
 
-  .annotation-8 {
+  .annotation-4_8 {
     top: 11%;
     left: 28%;
     transform: translate(-50%, -50%);
