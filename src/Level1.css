@@ -1,158 +1,58 @@
 /* Container for images and annotations */
 .level1-container-unique {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-   
-  }
-  
-  .level1-images-row-unique {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    margin-top: 10px;
-  }
-  
-  .image-container {
-    position: relative;
-    width: 30%;
-    margin: 0 10px;
-  }
-  
-  .responsive-img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Annotation styling */
-  .annotation {
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.7);
-    color:black;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 0.6rem;
-    white-space: nowrap;
-  }
-  
-  /* Example positions for annotations */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
 
-  .annotation-1_00 {
-    top: 53%;
-    left: 49%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-  }
+.level1-images-row-unique {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  flex-wrap: wrap; /* Ensure the images wrap on smaller screens */
+}
 
-  .annotation-1_01 {
-    top: 70%;
-    left: 77%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-  }
+.image-container {
+  position: relative;
+  width: 30%; /* Flexible width for responsiveness */
+  margin: 0 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
+}
 
-  .annotation-1_1 {
-    top: 10%;
-    left: 53%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-  }
-  
-  .annotation-1_2 {
-    top: 13%;
-    left: 41%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-  }
-  
-  .annotation-1_3 {
-    top: 48%;
-    left: 49%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-  }
-  
-  .annotation-1_4 {
-    top: 81%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-  }
-  
-  .annotation-1_5 {
-    top: 57%;
-    left: 88%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-  }
-  
-  .annotation-1_6 {
-    top: 23%;
-    left: 62%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-  }
+.responsive-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5); /* 3D shadow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
 
-  .annotation-1_7 {
-    top: 23%;
-    left: 45%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-  }
+/* Hover effect for images to add 3D effect */
+.hover-img:hover {
+  transform: scale(1.01); /* Slight zoom for 3D effect */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.7); /* Deeper shadow on hover */
+}
 
-  .annotation-1_8 {
-    top: 45%;
-    left: 52%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-  }
+/* Annotation styling */
+.annotation {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.6rem;
+  white-space: nowrap;
+  cursor: pointer;
+}
 
-  .annotation-1_9 {
-    top: 73%;
-    left: 53%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-  }
-
-  .annotation-1_10 {
-    top: 67%;
-    left: 73%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .annotation {
-      font-size: 0.8rem;
-    }
-  
-    .image-container {
-      width: 45%;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .annotation {
-      font-size: 0.7rem;
-    }
-  
-    .image-container {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-  }
-
-/* Tooltip styling */
 .annotation:hover::after {
   content: attr(data-tooltip);
   position: absolute;
-  bottom: 100%; /* Tooltip appears above the annotation */
+  bottom: 100%;
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(0, 0, 0, 0.8);
@@ -163,16 +63,93 @@
   white-space: nowrap;
   opacity: 1;
   visibility: visible;
-  cursor: pointer;
-  z-index: 10; /* Ensure tooltip appears above other elements */
+  z-index: 10;
 }
 
 .annotation::after {
   content: '';
-  cursor: pointer;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease;
+}
+
+/* Example positions for annotations */
+.annotation-1_00 {
+  top: 53%;
+  left: 49%;
+}
+
+.annotation-1_01 {
+  top: 70%;
+  left: 77%;
+}
+
+.annotation-1_1 {
+  top: 10%;
+  left: 53%;
+}
+
+.annotation-1_2 {
+  top: 13%;
+  left: 41%;
+}
+
+.annotation-1_3 {
+  top: 48%;
+  left: 49%;
+}
+
+.annotation-1_4 {
+  top: 81%;
+  left: 50%;
+}
+
+.annotation-1_5 {
+  top: 57%;
+  left: 88%;
+}
+
+.annotation-1_6 {
+  top: 23%;
+  left: 62%;
+}
+
+.annotation-1_7 {
+  top: 23%;
+  left: 45%;
+}
+
+.annotation-1_8 {
+  top: 45%;
+  left: 52%;
+}
+
+.annotation-1_9 {
+  top: 73%;
+  left: 53%;
+}
+
+.annotation-1_10 {
+  top: 67%;
+  left: 73%;
+}
+
+/* Tooltip styling */
+.annotation:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 0.7rem;
+  white-space: nowrap;
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
 }
 
 figure {
@@ -188,4 +165,68 @@ figcaption {
   text-align: center;
 }
 
-  
+/* Navigation Icons */
+.navigation-icons {
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.back-icon, .forward-icon {
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5); /* Shadow for 3D effect */
+}
+
+.back-icon:hover, .forward-icon:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: scale(1.1);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+.back-icon:active, .forward-icon:active {
+  transform: scale(0.95);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .annotation {
+    font-size: 0.8rem;
+  }
+
+  .image-container {
+    width: 45%;
+  }
+
+  .navigation-icons {
+    bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .annotation {
+    font-size: 0.7rem;
+  }
+
+  .image-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .navigation-icons {
+    padding: 0 10px;
+  }
+}

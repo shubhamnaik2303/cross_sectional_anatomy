@@ -59,41 +59,6 @@
   left: 1%;
 }
 
-/* Styling for the lines */
-.line {
-  position: absolute;
-  height: 1px;
-  background-color: #007bff;
-  width: 800px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-/* Line positions (do not change) */
-.line-1 {
-  top: 24%; 
-  left: 45%;
-}
-
-.line-2 {
-  top: 35%;
-  left: 45%;
-}
-
-.line-3 {
-  top: 49%;
-  left: 45%;
-}
-
-.line-4 {
-  top: 66%;
-  left: 45%;
-}
-
-.line-5 {
-  top: 77%;
-  left: 45%;
-}
 
 /* Label positions (do not change) */
 .level1 {
@@ -134,9 +99,6 @@
     font-size: 0.8rem;
   }
 
-  .line {
-    width: 650px; /* Maintain relative width for smaller screens */
-  }
 
   .level1 {
     top: 45%; 
@@ -178,9 +140,6 @@
     font-size: 0.8rem;
   }
 
-  .line {
-    width: 650px; /* Maintain relative width for smaller screens */
-  }
 
   .level1 {
     top: 42%; 
@@ -223,9 +182,6 @@
     font-size: 0.8rem;
   }
 
-  .line {
-    width: 550px; /* Maintain relative width for smaller screens */
-  }
 
   .level1 {
     top: 39%; 
@@ -269,10 +225,6 @@
 
   .responsive-img {
     width: 70%; /* Image scales down for small screens */
-  }
-
-  .line {
-    width: 350px; /* Adjust the line width proportionally */
   }
 
   .level1 {

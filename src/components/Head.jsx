@@ -7,15 +7,7 @@ const Head = () => {
     <div className="home-container">
       <h1 className="title">Head Anatomy</h1>
       <div className="image-container">
-        <img src="/images/Brain.jpg" alt="Brain Anatomy" className="responsive-img" />
-        
-        {/* Adding lines and labels */}
-        <div className="line line-1"></div>
-        <div className="line line-2"></div>
-        <div className="line line-3"></div>
-        <div className="line line-4"></div>
-        <div className="line line-5"></div>
-
+        <img src="/images/Cross-Section_Brain.png" alt="Brain Anatomy" className="responsive-img" />
       </div>
       <div>
       ` <Link to="level1" className="hyperlink level1">Level 1</Link>
