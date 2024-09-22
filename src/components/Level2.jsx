@@ -9,7 +9,7 @@ const Level2 = () => {
       {/* Image and Annotations Section */}
       <div className="level1-images-row-unique">
         <figure className="image-container">
-          <img src="/images/Level1_1.gif" alt="Brain Image 1" className="responsive-img" />
+          <img src="/images/Level2_1.gif" alt="Brain Image 1" className="responsive-img" />
           <div className="annotation annotation-1" data-tooltip="Frontal Lobe">1</div>
           <div className="annotation annotation-2" data-tooltip="Diploe">2</div>
           <div className="annotation annotation-3" data-tooltip="Falx Cerebri">3</div>
@@ -20,7 +20,7 @@ const Level2 = () => {
         </figure>
 
         <figure className="image-container">
-          <img src="/images/Level1_2.png" alt="Brain Image 2" className="responsive-img" />
+          <img src="/images/Level2_2.png" alt="Brain Image 2" className="responsive-img" />
           <div className="annotation annotation-6" data-tooltip="Frontal Lobe">1</div>
           <div className="annotation annotation-7" data-tooltip="Diploe">2</div>
           <div className="annotation annotation-8" data-tooltip="Falx Cerebri">3</div>
@@ -31,7 +31,7 @@ const Level2 = () => {
         </figure>
 
         <figure className="image-container">
-          <img src="/images/Level1_3.jpg" alt="Brain Image 3" className="responsive-img" />
+          <img src="/images/Level2_3.jpg" alt="Brain Image 3" className="responsive-img" />
           <div className="annotation annotation-00" data-tooltip="Falx Cerebri">3</div>
           <div className="annotation annotation-01" data-tooltip="Parietal Bone">5</div>
           {/* Description for Image 3 */}

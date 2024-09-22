@@ -34,7 +34,7 @@
   /* Annotation styling */
   .annotation {
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.5);
     color:black;
     padding: 5px 10px;
     border-radius: 5px;
@@ -192,7 +192,7 @@
   /* Responsive adjustments */
   @media (max-width: 768px) {
     .annotation {
-      font-size: 0.8rem;
+      font-size: 1rem;
     }
   
     .image-container {

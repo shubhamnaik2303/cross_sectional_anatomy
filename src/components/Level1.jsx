@@ -10,8 +10,8 @@ const Level1 = () => {
       <div className="level1-images-row-unique">
         <figure className="image-container">
           <img src="/images/Level1_1.gif" alt="Brain Image 1" className="responsive-img" />
-          <div className="annotation annotation-1_1" data-tooltip="Frontal Lobe">1</div>
-          <div className="annotation annotation-1_2" data-tooltip="Diploe">2</div>
+          <div className="annotation annotation-1_1" data-tooltip="Frontal Lobe"><b>1</b></div>
+          <div className="annotation annotation-1_2" data-tooltip="Diploe"><b>2</b></div>
           <div className="annotation annotation-1_3" data-tooltip="Falx Cerebri">3</div>
           <div className="annotation annotation-1_4" data-tooltip="Superior Saggital Sinus">4</div>
           <div className="annotation annotation-1_5" data-tooltip="Parietal Bone">5</div>
@@ -21,11 +21,11 @@ const Level1 = () => {
 
         <figure className="image-container">
           <img src="/images/Level1_2.png" alt="Brain Image 2" className="responsive-img" />
-          <div className="annotation annotation-1_6" data-tooltip="Frontal Lobe">1</div>
-          <div className="annotation annotation-1_7" data-tooltip="Diploe">2</div>
-          <div className="annotation annotation-1_8" data-tooltip="Falx Cerebri">3</div>
-          <div className="annotation annotation-1_9" data-tooltip="Superior Saggital Sinus">4</div>
-          <div className="annotation annotation-1_10" data-tooltip="Parietal Bone">5</div>
+          <div className="annotation annotation-1_6" data-tooltip="Frontal Lobe"><b>1</b></div>
+          <div className="annotation annotation-1_7" data-tooltip="Diploe"><b>2</b></div>
+          <div className="annotation annotation-1_8" data-tooltip="Falx Cerebri"><b>3</b></div>
+          <div className="annotation annotation-1_9" data-tooltip="Superior Saggital Sinus"><b>4</b></div>
+          <div className="annotation annotation-1_10" data-tooltip="Parietal Bone"><b>5</b></div>
           {/* Description for Image 2 */}
           <figcaption>Figure 2: Cadaver Appearance</figcaption>
         </figure>
