@@ -138,9 +138,6 @@
     font-size: 0.8rem;
   }
 
-  .line {
-    width: 650px; /* Maintain relative width for smaller screens */
-  }
 
   .level1 {
     top: 45%; 
@@ -182,9 +179,6 @@
     font-size: 0.8rem;
   }
 
-  .line {
-    width: 650px; /* Maintain relative width for smaller screens */
-  }
 
   .level1 {
     top: 42%; 
@@ -227,9 +221,6 @@
     font-size: 0.8rem;
   }
 
-  .line {
-    width: 550px; /* Maintain relative width for smaller screens */
-  }
 
   .level1 {
     top: 39%; 
@@ -273,10 +264,6 @@
 
   .responsive-img {
     width: 70%; /* Image scales down for small screens */
-  }
-
-  .line {
-    width: 350px; /* Adjust the line width proportionally */
   }
 
   .level1 {
