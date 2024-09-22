@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Level1.css'; // Assuming the styles are shared across all components
+import '../Level2.css'; // Assuming the styles are shared across all components
 
 const Level2 = () => {
   return (
@@ -10,30 +10,36 @@ const Level2 = () => {
       <div className="level1-images-row-unique">
         <figure className="image-container">
           <img src="/images/Level2_1.gif" alt="Brain Image 1" className="responsive-img" />
-          <div className="annotation annotation-1" data-tooltip="Frontal Lobe">1</div>
-          <div className="annotation annotation-2" data-tooltip="Diploe">2</div>
-          <div className="annotation annotation-3" data-tooltip="Falx Cerebri">3</div>
-          <div className="annotation annotation-4" data-tooltip="Superior Saggital Sinus">4</div>
-          <div className="annotation annotation-5" data-tooltip="Parietal Bone">5</div>
+          <div className="annotation annotation-2_1" data-tooltip="Corpus Collosum">1</div>
+          <div className="annotation annotation-2_2" data-tooltip="Head of Caudate Nucleus">2</div>
+          <div className="annotation annotation-2_3" data-tooltip="Lentiform Nucleus">3</div>
+          <div className="annotation annotation-2_4" data-tooltip="Thalamus">4</div>
+          <div className="annotation annotation-2_5" data-tooltip="Posterial Horn of Lateral Ventricle">5</div>
+          <div className="annotation annotation-2_6" data-tooltip="Frontal sinus">6</div>
           {/* Description for Image 1 */}
           <figcaption>Figure 1: MRI Appearance</figcaption>
         </figure>
 
         <figure className="image-container">
           <img src="/images/Level2_2.png" alt="Brain Image 2" className="responsive-img" />
-          <div className="annotation annotation-6" data-tooltip="Frontal Lobe">1</div>
-          <div className="annotation annotation-7" data-tooltip="Diploe">2</div>
-          <div className="annotation annotation-8" data-tooltip="Falx Cerebri">3</div>
-          <div className="annotation annotation-9" data-tooltip="Superior Saggital Sinus">4</div>
-          <div className="annotation annotation-10" data-tooltip="Parietal Bone">5</div>
+          <div className="annotation annotation-2_01" data-tooltip="Corpus Collosum">1</div>
+          <div className="annotation annotation-2_02" data-tooltip="Head of Caudate Nucleus">2</div>
+          <div className="annotation annotation-2_03" data-tooltip="Lentiform Nucleus">3</div>
+          <div className="annotation annotation-2_04" data-tooltip="Thalamus">4</div>
+          <div className="annotation annotation-2_05" data-tooltip="Posterial Horn of Lateral Ventricle">5</div>
+          <div className="annotation annotation-2_06" data-tooltip="Frontal sinus">6</div>
           {/* Description for Image 2 */}
           <figcaption>Figure 2: Cadaver Appearance</figcaption>
         </figure>
 
         <figure className="image-container">
           <img src="/images/Level2_3.jpg" alt="Brain Image 3" className="responsive-img" />
-          <div className="annotation annotation-00" data-tooltip="Falx Cerebri">3</div>
-          <div className="annotation annotation-01" data-tooltip="Parietal Bone">5</div>
+          <div className="annotation annotation-2_001" data-tooltip="Corpus Collosum">1</div>
+          <div className="annotation annotation-2_002" data-tooltip="Head of Caudate Nucleus">2</div>
+          <div className="annotation annotation-2_003" data-tooltip="Lentiform Nucleus">3</div>
+          <div className="annotation annotation-2_004" data-tooltip="Thalamus">4</div>
+          <div className="annotation annotation-2_005" data-tooltip="Posterial Horn of Lateral Ventricle">5</div>
+          <div className="annotation annotation-2_006" data-tooltip="Frontal sinus">6</div>
           {/* Description for Image 3 */}
           <figcaption>Figure 3: CT Appearance</figcaption>
         </figure>

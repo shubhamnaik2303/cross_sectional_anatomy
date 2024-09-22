@@ -68,7 +68,11 @@
   left: 50%;
   transform: translateX(-50%);
 }
-
+.image-container.buttons
+{
+  background-color: transparent;
+  
+}
 /* Line positions (do not change) */
 .line-1 {
   top: 24%; 
