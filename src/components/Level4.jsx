@@ -1,7 +1,20 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../Level4.css'; // Assuming the styles are shared across all components
 
 const Level3 = () => {
+
+  const navigate = useNavigate();
+
+  const handleNext = () => {
+    navigate('/head/level5'); // Adjust this to the correct route for Level 3
+  };
+
+  const handlePrevious = () => {
+    navigate('/head/level3'); // Adjust this to the correct route for Level 1
+  };
+
+
   return (
     <div className="level1-container-unique">
       <h1 className="level1-title-unique">Cross Sectional Brain Anatomy - Level 4</h1>
@@ -44,6 +57,17 @@ const Level3 = () => {
           <figcaption>Figure 3: CT Appearance</figcaption>
         </figure>
       </div>
+
+       {/* Navigation Icons */}
+       <div className="navigation-icons">
+        <div className="back-icon" onClick={handlePrevious}>
+          &#8592; {/* Back arrow icon */}
+        </div>
+        <div className="forward-icon" onClick={handleNext}>
+          &#8594; {/* Forward arrow icon */}
+        </div>
+      </div>
+      
     </div>
   );
 }

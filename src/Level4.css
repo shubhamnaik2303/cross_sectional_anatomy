@@ -1,34 +1,40 @@
 /* Container for images and annotations */
 .level1-container-unique {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-   
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.level1-images-row-unique {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  flex-wrap: wrap; /* Ensure the images wrap on smaller screens */
+}
+
+  .image-container {
+    position: relative;
+    width: 30%; /* Flexible width for responsiveness */
+    margin: 0 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
   }
-  
-  .level1-images-row-unique {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    margin-top: 10px;
-  }
-  
-  /* .image-container img {
-    height: 500px; 
-    width: auto; 
-    object-fit: cover; 
-    border-radius: 10px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-} */
   
   .responsive-img {
     width: 100%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5); /* 3D shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  }
+  
+  /* Hover effect for images to add 3D effect */
+  .hover-img:hover {
+    transform: scale(1.01); /* Slight zoom for 3D effect */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.7); /* Deeper shadow on hover */
   }
   
   /* Annotation styling */
