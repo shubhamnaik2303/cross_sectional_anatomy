@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // Assuming you are using react-router
 import '../Level1.css'; // Assuming the styles are shared across all components
+import { toggleButtons } from './script';
 
 const Level1 = () => {
   const [buttonClicked, setButtonClicked] = useState(false);
@@ -62,7 +63,7 @@ const Level1 = () => {
       </div>
       
       <div>
-        <button id="toggleButton" data-tooltip="Show/Hide labels" className="toggle-button" onClick={() => setButtonClicked(!buttonClicked)}>
+        <button id="toggleButton" data-tooltip="Show/Hide labels" className="toggle-button" onClick={() => toggleButtons(buttonClicked, setButtonClicked)}>
           {buttonClicked ? <img src="/images/on-1.png" alt="afterClick" /> : <img src="/images/off-1.png" alt="beforeClick" />}
         </button>
       </div>

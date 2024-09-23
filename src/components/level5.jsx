@@ -73,7 +73,7 @@ const Level5 = () => {
       </div>
       
       <div>
-        <button id="toggleButton" data-tooltip="Show/Hide labels" className="toggle-button" onClick={() => setButtonClicked(!buttonClicked)}>
+        <button id="toggleButton" data-tooltip="Show/Hide labels" className="toggle-button" onClick={() => toggleButtons(buttonClicked, setButtonClicked)}>
           {buttonClicked ? <img src="/images/on-1.png" alt="afterClick" /> : <img src="/images/off-1.png" alt="beforeClick" />}
         </button>
       </div>
