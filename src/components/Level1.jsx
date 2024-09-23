@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // Assuming you are using react-router
 import '../Level1.css'; // Assuming the styles are shared across all components
+import { toggleButtons } from './script';
 
 const Level1 = () => {
+  const [buttonClicked, setButtonClicked] = useState(false);
   const navigate = useNavigate(); // Hook for navigation
 
   const handleNext = () => {
@@ -45,9 +47,14 @@ const Level1 = () => {
           <div className="annotation annotation-1_01" data-tooltip="Parietal Bone">5</div>
           <figcaption>Figure 3: CT Appearance</figcaption>
         </figure>
+        <div>
+          <button id="toggleButton" data-tooltip="Show/Hide labels" className="toggle-button" onClick={() => toggleButtons(buttonClicked, setButtonClicked)}>
+          {buttonClicked ? <img src="/images/on-1.png" alt="afterClick" /> : <img src="/images/off-1.png" alt="beforeClick" />}
+      </button>
+        </div>
       </div>
-
-      {/* Back and Forward Icons */}
+        
+           {/* Back and Forward Icons */}
       <div className="navigation-icons">
         <div className="back-icon" onClick={handlePrevious}>
           &#8592; {/* Back arrow icon */}
@@ -57,6 +64,7 @@ const Level1 = () => {
         </div>
       </div>
     </div>
+    
   );
 };
 

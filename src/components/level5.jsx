@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../Level5.css'; // Assuming the styles are shared across all components
+import { toggleButtons } from './script';
 
 const Level5 = () => {
+  const [buttonClicked, setButtonClicked] = useState(false);
   return (
     <div className="level1-container-unique">
       <h1 className="level1-title-unique">Cross Sectional Brain Anatomy - Level 5</h1>
@@ -44,6 +46,11 @@ const Level5 = () => {
           {/* Description for Image 3 */}
           <figcaption>Figure 3: CT Appearance</figcaption>
         </figure>
+      </div>
+      <div>
+      <button id="toggleButton" data-tooltip="Show/Hide labels" className="toggle-button" onClick={() => toggleButtons(buttonClicked, setButtonClicked)}>
+          {buttonClicked ? <img src="/images/on-1.png" alt="afterClick" /> : <img src="/images/off-1.png" alt="beforeClick" />}
+      </button>
       </div>
     </div>
   );
