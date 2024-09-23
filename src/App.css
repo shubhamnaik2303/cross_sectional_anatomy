@@ -38,25 +38,35 @@
   font-size: 0.4rem;
 }
 
+.hyperlink1 {
+  position: absolute;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.6rem;
+}
+
 /* Positioning the hyperlinks (do not change) */
 .head-link {
-  top: 7%;  
-  left: 7%;
+  top: 8%;  
+  right: 85%;
 }
 
 .neck-link {
-  top: 15%; 
-  left: 7%;
+  top: 17%; 
+  right: 85%;
 }
 
 .thorax-link {
-  top: 25%; 
-  left: 5%;
+  top: 26.4%; 
+  right: 85%;
 }
 
 .abdomen-link {
-  top: 38%; 
-  left: 1%;
+  top: 39.3%; 
+  right: 85%;
 }
 
 /* Styling for the lines */

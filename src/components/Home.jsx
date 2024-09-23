@@ -10,10 +10,10 @@ const Home = () => {
         <img src="/images/HumanBody.png" alt="Human Body" className="responsive-img" />
 
         {/* Hyperlinks positioned over the image */}
-        <Link to="/head" className="hyperlink head-link">Head</Link>
-        <Link to="/neck" className="hyperlink neck-link">Neck</Link>
-        <Link to="/thorax" className="hyperlink thorax-link">Thorax</Link>
-        <Link to="/abdomen" className="hyperlink abdomen-link">Abdomen</Link>
+        <Link to="/head" className="hyperlink1 head-link">Head</Link>
+        <Link to="/neck" className="hyperlink1 neck-link">Neck</Link>
+        <Link to="/thorax" className="hyperlink1 thorax-link">Thorax</Link>
+        <Link to="/abdomen" className="hyperlink1 abdomen-link">Abdomen</Link>
       </div>
     </div>
   );
