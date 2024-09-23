@@ -1,8 +1,22 @@
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
 import '../Level5.css'; // Assuming the styles are shared across all components
 import { toggleButtons } from './script';
 
 const Level5 = () => {
+
+  const navigate = useNavigate();
+
+  const handleNext = () => {
+    navigate('/head'); // Adjust this to the correct route for Level 3
+  };
+
+  const handlePrevious = () => {
+    navigate('/head/level4'); // Adjust this to the correct route for Level 1
+  };
+
+
   const [buttonClicked, setButtonClicked] = useState(false);
   return (
     <div className="level1-container-unique">
@@ -47,6 +61,17 @@ const Level5 = () => {
           <figcaption>Figure 3: CT Appearance</figcaption>
         </figure>
       </div>
+
+       {/* Navigation Icons */}
+       <div className="navigation-icons">
+        <div className="back-icon" onClick={handlePrevious}>
+          &#8592; {/* Back arrow icon */}
+        </div>
+        <div className="forward-icon" onClick={handleNext}>
+          &#8594; {/* Forward arrow icon */}
+        </div>
+      </div>
+
       <div>
       <button id="toggleButton" data-tooltip="Show/Hide labels" className="toggle-button" onClick={() => toggleButtons(buttonClicked, setButtonClicked)}>
           {buttonClicked ? <img src="/images/on-1.png" alt="afterClick" /> : <img src="/images/off-1.png" alt="beforeClick" />}
