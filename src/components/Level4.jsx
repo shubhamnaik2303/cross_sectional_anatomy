@@ -11,13 +11,13 @@ const Level3 = () => {
         <figure className="image-container">
           <img src="/images/Level4_1.gif" alt="Brain Image 1" className="responsive-img" />
           <div className="annotation annotation-4_1" data-tooltip="Perpendicular Plate Ethmoid"><b>1</b></div>
-          <div className="annotation annotation-4_2" data-tooltip="Parietal Bone"><b>5</b></div>
-          <div className="annotation annotation-4_3" data-tooltip="Superior Saggital Sinus"><b>6</b></div>
-          <div className="annotation annotation-4_4" data-tooltip="Cerebellum"><b>7</b></div>
-          <div className="annotation annotation-4_5" data-tooltip="Hypothalamus"><b>8</b></div>
-          <div className="annotation annotation-4_6" data-tooltip="Anterior Clinoid Process">9</div>
-          <div className="annotation annotation-4_7" data-tooltip="Lateral Rectus">10</div>
-          <div className="annotation annotation-4_8" data-tooltip="Vitreous of Eye">11</div>
+          <div className="annotation annotation-4_5" data-tooltip="Parietal Bone"><b>5</b></div>
+          <div className="annotation annotation-4_6" data-tooltip="Superior Saggital Sinus"><b>6</b></div>
+          <div className="annotation annotation-4_7" data-tooltip="Cerebellum"><b>7</b></div>
+          <div className="annotation annotation-4_8" data-tooltip="Hypothalamus"><b>8</b></div>
+          <div className="annotation annotation-4_9" data-tooltip="Anterior Clinoid Process">9</div>
+          <div className="annotation annotation-4_10" data-tooltip="Lateral Rectus">10</div>
+          <div className="annotation annotation-4_11" data-tooltip="Vitreous of Eye">11</div>
           {/* Description for Image 1 */}
           <figcaption>Figure 1: MRI Appearance</figcaption>
         </figure>
@@ -33,8 +33,8 @@ const Level3 = () => {
           <div className="annotation annotation-4_07" data-tooltip="Cerebellum">7</div>
           <div className="annotation annotation-4_08" data-tooltip="Hypothalamus">8</div>
           <div className="annotation annotation-4_09" data-tooltip="Anterior Clinoid Process">9</div>
-          <div className="annotation annotation-4_10" data-tooltip="Lateral Rectus">10</div>
-          <div className="annotation annotation-4_11" data-tooltip="Vitreous of Eye">11</div>
+          <div className="annotation annotation-4_010" data-tooltip="Lateral Rectus">10</div>
+          <div className="annotation annotation-4_011" data-tooltip="Vitreous of Eye">11</div>
           {/* Description for Image 2 */}
           <figcaption>Figure 2: Cadaver Appearance</figcaption>
         </figure>

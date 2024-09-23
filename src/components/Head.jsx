@@ -7,7 +7,7 @@ const Head = () => {
     <div className="home-container">
       <h1 className="title">Head Anatomy</h1>
       <div className="image-container">
-        <img src="/images/Cross-Section_Brain.png" alt="Brain Anatomy" className="responsive-img" />
+        <img src="/images/Cross-Section_Brain1.png" alt="Brain Anatomy" className="responsive-img" />
       </div>
       <div>
       ` <Link to="level1" className="hyperlink level1">Level 1</Link>
