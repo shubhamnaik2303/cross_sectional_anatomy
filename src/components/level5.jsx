@@ -1,4 +1,3 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
 import '../Level5.css'; // Assuming the styles are shared across all components
@@ -60,6 +59,11 @@ const Level5 = () => {
           {/* Description for Image 3 */}
           <figcaption>Figure 3: CT Appearance</figcaption>
         </figure>
+        <div>
+      <button id="toggleButton" data-tooltip="Show/Hide labels" className="toggle-button" onClick={() => toggleButtons(buttonClicked, setButtonClicked)}>
+          {buttonClicked ? <img src="/images/on-1.png" alt="afterClick" /> : <img src="/images/off-1.png" alt="beforeClick" />}
+      </button>
+      </div>
       </div>
 
        {/* Navigation Icons */}
@@ -70,12 +74,6 @@ const Level5 = () => {
         <div className="forward-icon" onClick={handleNext}>
           &#8594; {/* Forward arrow icon */}
         </div>
-      </div>
-
-      <div>
-      <button id="toggleButton" data-tooltip="Show/Hide labels" className="toggle-button" onClick={() => toggleButtons(buttonClicked, setButtonClicked)}>
-          {buttonClicked ? <img src="/images/on-1.png" alt="afterClick" /> : <img src="/images/off-1.png" alt="beforeClick" />}
-      </button>
       </div>
     </div>
   );

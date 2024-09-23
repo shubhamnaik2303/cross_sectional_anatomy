@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../Level2.css'; // Using the same CSS as Level1 for consistent styling
+import { toggleButtons } from './script';
 
 const Level2 = () => {
   const navigate = useNavigate();
+  const [buttonClicked, setButtonClicked] = useState(false);
 
   const handleNext = () => {
     navigate('/head/level3'); // Adjust this to the correct route for Level 3
@@ -51,6 +53,11 @@ const Level2 = () => {
           <div className="annotation annotation-2_006" data-tooltip="Frontal sinus"><b>6</b></div>
           <figcaption>Figure 3: CT Appearance</figcaption>
         </figure>
+        <div>
+      <button id="toggleButton" data-tooltip="Show/Hide labels" className="toggle-button" onClick={() => toggleButtons(buttonClicked, setButtonClicked)}>
+          {buttonClicked ? <img src="/images/on-1.png" alt="afterClick" /> : <img src="/images/off-1.png" alt="beforeClick" />}
+      </button>
+      </div>
       </div>
 
       {/* Navigation Icons */}

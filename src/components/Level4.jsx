@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import { toggleButtons } from './script';
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../Level4.css'; // Assuming the styles are shared across all components
 
 const Level4 = () => {
   const [buttonClicked, setButtonClicked] = useState(false);
-const Level3 = () => {
 
   const navigate = useNavigate();
 
@@ -60,11 +58,11 @@ const Level3 = () => {
           <img src="/images/Level4_3.jpg" alt="Brain Image 3" className="responsive-img" />
           <figcaption>Figure 3: CT Appearance</figcaption>
         </figure>
-      </div>
-      <div>
+        <div>
       <button id="toggleButton" data-tooltip="Show/Hide labels" className="toggle-button" onClick={() => toggleButtons(buttonClicked, setButtonClicked)}>
           {buttonClicked ? <img src="/images/on-1.png" alt="afterClick" /> : <img src="/images/off-1.png" alt="beforeClick" />}
       </button>
+      </div>
       </div>
 
        {/* Navigation Icons */}
