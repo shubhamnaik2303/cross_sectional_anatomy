@@ -23,6 +23,12 @@ const Level5 = () => {
 
       {/* Image and Annotations Section */}
       <div className="level1-images-row-unique">
+
+        {/* Back Icon */}
+        <div className="back-icon" onClick={handlePrevious}>
+          &#8592; {/* Back arrow icon */}
+        </div>
+
         <figure className="image-container">
           <img src="/images/Level5_1.gif" alt="Brain Image 1" className="responsive-img" />
           <div className="annotation annotation-5_5" data-tooltip="Pons">5</div>
@@ -59,24 +65,20 @@ const Level5 = () => {
           {/* Description for Image 3 */}
           <figcaption>Figure 3: CT Appearance</figcaption>
         </figure>
-        <div>
-      <button id="toggleButton" data-tooltip="Show/Hide labels" className="toggle-button" onClick={() => toggleButtons(buttonClicked, setButtonClicked)}>
-          {buttonClicked ? <img src="/images/on-1.png" alt="afterClick" /> : <img src="/images/off-1.png" alt="beforeClick" />}
-      </button>
-      </div>
-      </div>
 
-       {/* Navigation Icons */}
-       <div className="navigation-icons">
-        <div className="back-icon" onClick={handlePrevious}>
-          &#8592; {/* Back arrow icon */}
-        </div>
+        {/* Forward Icon */}
         <div className="forward-icon" onClick={handleNext}>
           &#8594; {/* Forward arrow icon */}
         </div>
       </div>
+      
+      <div>
+        <button id="toggleButton" data-tooltip="Show/Hide labels" className="toggle-button" onClick={() => setButtonClicked(!buttonClicked)}>
+          {buttonClicked ? <img src="/images/on-1.png" alt="afterClick" /> : <img src="/images/off-1.png" alt="beforeClick" />}
+        </button>
+      </div>
     </div>
   );
-}
+};
 
 export default Level5;

@@ -116,42 +116,7 @@
   z-index: 10;
 }
 
-/* Container for the navigation icons */
-.navigation-icons {
-  position: fixed;
-  bottom: 20px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between; /* Ensures the icons are placed far apart on each side */
-  padding: 0 20px; /* Padding for spacing within the container */
-  z-index: 1000; /* Makes sure the buttons are always on top */
-}
 
-/* Shared styles for both back and forward icons */
-.back-icon, .forward-icon {
-  font-size: 1.5rem;
-  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
-  color: white;
-  padding: 10px;
-  border-radius: 50%; /* Circular icon background */
-  cursor: pointer;
-  margin: 0 20px; /* Consistent margin for both icons */
-  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover and click effects */
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5); /* 3D shadow effect */
-}
-
-/* Hover effect for both icons */
-.back-icon:hover, .forward-icon:hover {
-  background-color: rgba(11, 9, 73, 0.8); /* Darker background on hover */
-  transform: scale(1.1); /* Slight increase in size on hover */
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.7); /* More intense shadow on hover */
-}
-
-/* Active/click effect for both icons */
-.back-icon:active, .forward-icon:active {
-  transform: scale(0.95); /* Slight shrink on click */
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5); /* Reduced shadow on click */
-}
 
 
 /* Responsive adjustments */

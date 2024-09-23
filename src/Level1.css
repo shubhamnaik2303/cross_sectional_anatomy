@@ -9,32 +9,33 @@
 
 .level1-images-row-unique {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   margin-top: 10px;
-  flex-wrap: wrap; /* Ensure the images wrap on smaller screens */
+  flex-wrap: nowrap;
 }
 
+/* Image container */
 .image-container {
   position: relative;
-  width: 30%; /* Flexible width for responsiveness */
+  width: 30%;
   margin: 0 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .responsive-img {
   width: 100%;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5); /* 3D shadow effect */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover effect for images to add 3D effect */
+/* Hover effect for images */
 .hover-img:hover {
-  transform: scale(1.01); /* Slight zoom for 3D effect */
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.7); /* Deeper shadow on hover */
+  transform: scale(1.01);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.7);
 }
 
 /* Annotation styling */
@@ -71,6 +72,114 @@
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease;
+}
+
+/* Back and forward icons */
+.back-icon, .forward-icon {
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px;
+  margin: 0px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.back-icon:hover, .forward-icon:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: scale(1.1);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+.back-icon:active, .forward-icon:active {
+  transform: scale(0.95);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Toggle button styling */
+.toggle-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.toggle-button img {
+  width: 40px;
+  height: auto;
+}
+
+/* Responsive Design */
+
+/* For medium screens (tablets and smaller) */
+@media (max-width: 1024px) {
+  .level1-images-row-unique {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-container {
+    width: 80%;
+    margin: 10px 0;
+  }
+
+  /* Place icons on top of the first image */
+  .back-icon, .forward-icon {
+    position: absolute;
+    top: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+    font-size: 2rem;
+  }
+
+  /* Back icon on the left */
+  .back-icon {
+    left: 0px;
+  }
+
+  /* Forward icon on the right */
+  .forward-icon {
+    right: 10px;
+  }
+}
+
+/* For small screens (phones and smaller tablets) */
+@media (max-width: 768px) {
+  .image-container {
+    width: 100%;
+  }
+
+  .back-icon, .forward-icon {
+    font-size: 2.5rem;
+  }
+
+  .annotation {
+    font-size: 0.5rem;
+  }
+}
+
+/* For extra small screens (phones) */
+@media (max-width: 480px) {
+  .image-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .toggle-button {
+    margin-bottom: 10px;
+  }
+
+  .annotation {
+    font-size: 0.4rem;
+  }
+
+  .back-icon, .forward-icon {
+    font-size: 3rem;
+  }
 }
 
 /* Example positions for annotations */
@@ -132,101 +241,4 @@
 .annotation-1_10 {
   top: 67%;
   left: 73%;
-}
-
-/* Tooltip styling */
-.annotation:hover::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-  padding: 5px;
-  border-radius: 5px;
-  font-size: 0.7rem;
-  white-space: nowrap;
-  opacity: 1;
-  visibility: visible;
-  z-index: 10;
-}
-
-figure {
-  display: inline-block;
-  text-align: center;
-  width: 30%; /* Adjust width as needed */
-}
-
-figcaption {
-  margin-top: 10px;
-  font-size: 0.9rem;
-  color: #333;
-  text-align: center;
-}
-
-/* Navigation Icons */
-.navigation-icons {
-  position: fixed;
-  bottom: 20px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 20px;
-}
-
-.back-icon, .forward-icon {
-  font-size: 1.5rem;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  padding: 10px;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  border-radius: 50%;
-  cursor: pointer;
-  border-radius: 20px;
-  transition: background-color 0.3s, transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5); /* Shadow for 3D effect */
-}
-
-.back-icon:hover, .forward-icon:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  transform: scale(1.1);
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.7);
-}
-
-.back-icon:active, .forward-icon:active {
-  transform: scale(0.95);
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .annotation {
-    font-size: 0.8rem;
-  }
-
-  .image-container {
-    width: 45%;
-  }
-
-  .navigation-icons {
-    bottom: 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  .annotation {
-    font-size: 0.7rem;
-  }
-
-  .image-container {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .navigation-icons {
-    padding: 0 10px;
-  }
 }
