@@ -74,15 +74,18 @@
   }
   
   /* Example positions for annotations */
+  .annotation-5_4 { top: 39%; left: 56%; }
   .annotation-5_5 { top: 52%; left: 50%; }
   .annotation-5_6 { top: 62%; left: 50%; }
-  .annotation-5_7 { top: 75%; left: 55%; }
+  .annotation-5_7 { top: 82%; left: 56%; }
   .annotation-5_8 { top: 79%; left: 38%; }
-  .annotation-5_13 { top: 20%; left: 28%; }
+  .annotation-5_9 { top: 63.5%; left: 31%; }
+  .annotation-5_12 { top: 35%; left: 50%; }
+  .annotation-5_13 { top: 22%; left: 38%; }
 
   
   .annotation-5_01 { top: 21%; left: 54.5%; }
-  .annotation-5_02 { top: 31%; left: 77%; }
+  .annotation-5_02 { top: 28%; left: 18.5%; }
   .annotation-5_03 { top: 35.5%; left: 67.5%; }
   .annotation-5_04 { top: 38%; left: 56%; }
   .annotation-5_05 { top: 45.5%; left: 50%; }
@@ -92,8 +95,22 @@
   .annotation-5_09 { top: 63.5%; left: 31%; }
   .annotation-5_010 { top: 54%; left: 18%; }
   .annotation-5_011 { top: 43%; left: 36%; }
-  .annotation-5_012 { top: 33%; left: 0%; }
-  .annotation-5_013 { top: 23%; left: 34%; }
+  .annotation-5_012 { top: 35%; left: 48%; }
+  .annotation-5_013 { top: 26%; left: 34%; }
+
+
+  .annotation-5_001 { top: 21%; left: 54.5%; }
+  .annotation-5_002 { top: 23%; left: 18%; }
+  .annotation-5_003 { top: 35.5%; left: 67.5%; }
+  .annotation-5_005 { top: 45.5%; left: 50%; }
+  .annotation-5_006 { top: 53%; left: 48%; }
+  .annotation-5_007 { top: 75%; left: 58%; }
+  .annotation-5_008 { top: 68%; left: 23%; }
+  .annotation-5_009 { top: 63.5%; left: 31%; }
+  .annotation-5_0010 { top: 54%; left: 18%; }
+  .annotation-5_0011 { top: 43%; left: 36%; }
+  .annotation-5_0012 { top: 33%; left: 47%; }
+  .annotation-5_0013 { top: 23%; left: 39%; }
   
   
   

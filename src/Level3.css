@@ -75,28 +75,28 @@
 
 /* Example positions for annotations */
 .annotation-3_2 { top: 44%; left: 52%; }
-.annotation-3_4 { top: 85%; left: 46%; }
+.annotation-3_4 { top: 82%; left: 44%; }
 .annotation-3_5 { top: 72%; left: 35%; }
-.annotation-3_6 { top: 50%; left: 44%; }
-.annotation-3_7 { top: 36%; left: 12%; }
-.annotation-3_8 { top: 25%; left: 35%; }
-.annotation-3_9 { top: 20%; left: 40%; }
+.annotation-3_6 { top: 52%; left: 40%; }
+.annotation-3_7 { top: 34%; left: 7.5%; }
+.annotation-3_8 { top: 20%; left: 31%; }
+.annotation-3_9 { top: 13%; left: 45%; }
 
 .annotation-3_01 { top: 19%; left: 69.5%; }
 .annotation-3_02 { top: 43%; left: 50%; }
 .annotation-3_03 { top: 50%; left: 58%; }
 .annotation-3_04 { top: 78%; left: 47.5%; }
 .annotation-3_05 { top: 68%; left: 40%; }
-.annotation-3_06 { top: 58%; left: 39.5%; }
-.annotation-3_07 { top: 33%; left: 26%; }
-.annotation-3_08 { top: 24%; left: 39%; }
-.annotation-3_09 { top: 17.5%; left: 46%; }
+.annotation-3_06 { top: 58%; left: 33%; }
+.annotation-3_07 { top: 33%; left: 15%; }
+.annotation-3_08 { top: 22%; left: 32%; }
+.annotation-3_09 { top: 13.5%; left: 46%; }
 
 .annotation-3_001 { top: 20%; left: 68%; }
 .annotation-3_002 { top: 38%; left: 50%; }
-.annotation-3_004 { top: 85%; left: 53%; }
-.annotation-3_007 { top: 33%; left: 20%; }
-.annotation-3_009 { top: 10%; left: 44%; }
+.annotation-3_004 { top: 79%; left: 50.5%; }
+.annotation-3_007 { top: 30%; left: 15%; }
+.annotation-3_009 { top: 12.5%; left: 44%; }
 
 /* Tooltip styling */
 .annotation:hover::after {

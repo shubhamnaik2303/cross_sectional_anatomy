@@ -31,10 +31,13 @@ const Level5 = () => {
 
         <figure className="image-container">
           <img src="/images/Level5_1.gif" alt="Brain Image 1" className="responsive-img" />
+          <div className="annotation annotation-5_4" data-tooltip="Internal Carotoid Artery">4</div>
           <div className="annotation annotation-5_5" data-tooltip="Pons">5</div>
           <div className="annotation annotation-5_6" data-tooltip="Superior Cerebellar Pudencle">6</div>
           <div className="annotation annotation-5_7" data-tooltip="Occipital Lobe">7</div>
           <div className="annotation annotation-5_8" data-tooltip="Transverse Sinus">8</div>
+          <div className="annotation annotation-5_9" data-tooltip="Cerebellum">9</div>
+          <div className="annotation annotation-5_12" data-tooltip="Sphenoid Sinus">12</div>
           <div className="annotation annotation-5_13" data-tooltip="Maxilarry Sinus">13</div>
           
           {/* Description for Image 1 */}
@@ -63,6 +66,18 @@ const Level5 = () => {
         <figure className="image-container">
           <img src="/images/Level5_3.jpg" alt="Brain Image 3" className="responsive-img" />
           {/* Description for Image 3 */}
+          <div className="annotation annotation-5_001" data-tooltip="Nasolacrimal Duct">1</div>
+          <div className="annotation annotation-5_002" data-tooltip="Zygomatic Ach">2</div>
+          <div className="annotation annotation-5_003" data-tooltip="Temporal Pole">3</div>
+          <div className="annotation annotation-5_005" data-tooltip="Pons">5</div>
+          <div className="annotation annotation-5_006" data-tooltip="Superior Cerebellar Pudencle">6</div>
+          <div className="annotation annotation-5_007" data-tooltip="Occipital Lobe">7</div>
+          <div className="annotation annotation-5_008" data-tooltip="Transverse Sinus">8</div>
+          <div className="annotation annotation-5_009" data-tooltip="Cerebellum">9</div>
+          <div className="annotation annotation-5_0010" data-tooltip="Mastoid Air cells">10</div>
+          <div className="annotation annotation-5_0011" data-tooltip="Cavernous Sinus">11</div>
+          <div className="annotation annotation-5_0012" data-tooltip="Sphenoid Sinus">12</div>
+          <div className="annotation annotation-5_0013" data-tooltip="Maxillary Sinus">13</div>
           <figcaption>Figure 3: CT Appearance</figcaption>
         </figure>
 
