@@ -1,0 +1,272 @@
+/* Main container styling remains the same */
+.abdomen-home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f5;
+    text-align: center;
+  }
+  
+  .abdomen-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .abdomen-image-container {
+    position: relative;
+    width: 80%; /* Default width for large screens */
+    max-width: 600px; /* Limit the maximum width of the image container */
+  }
+  
+  .abdomen-responsive-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .abdomen-hyperlink {
+    position: absolute;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.4rem;
+  }
+  
+  .abdomen-hyperlink1 {
+    position: absolute;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.6rem;
+  }
+  
+  /* Positioning the hyperlinks (do not change) */
+  .abdomen-head-link {
+    top: 8%;  
+    right: 85%;
+  }
+  
+  .abdomen-neck-link {
+    top: 17%; 
+    right: 85%;
+  }
+  
+  .abdomen-thorax-link {
+    top: 26.4%; 
+    right: 85%;
+  }
+  
+  .abdomen-abdomen-link {
+    top: 39.3%; 
+    right: 85%;
+  }
+  
+  /* Styling for the lines */
+  .abdomen-line {
+    position: absolute;
+    height: 1px;
+    background-color: #007bff;
+    width: 800px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Label positions (do not change) */
+  .abdomen-t10 {
+    top: 38%; 
+    left: 59%;
+  }
+  
+  .abdomen-t11 {
+    top: 41.5%;
+    left: 59%;
+  }
+  
+  .abdomen-t12-l1 {
+    top: 44.8%;
+    left: 59%;
+  }
+  
+  .abdomen-l1 {
+    top: 47.8%;
+    left: 59%;
+  }
+  
+  .abdomen-l2 {
+    top: 51%;
+    left: 59%;
+  }
+
+  .abdomen-l3 {
+    top: 55%;
+    left: 59%;
+  }
+  
+  .abdomen-l4 {
+    top: 59%;
+    left: 59%;
+  }
+  
+  @media (min-device-width: 621px) and  (max-width: 820px) {
+    .abdomen-title {
+      font-size: 2rem;
+    }
+  
+    .abdomen-image-container {
+      width: 90%; /* Scale image container for medium screens */
+    }
+  
+    .abdomen-hyperlink {
+      font-size: 0.3rem;
+    }
+  
+    .abdomen-t10 {
+      top: 37.8%; 
+      left: 64%;
+    }
+  
+    .abdomen-t11 {
+      top: 41%;
+      left: 64%;
+    }
+  
+    .abdomen-t12-l1 {
+      top: 52%;
+      left: 64%;
+    }
+  
+    .abdomen-l1 {
+      top: 57%;
+      left: 64%;
+    }
+  
+    .abdomen-l2 {
+      top: 60%;
+      left: 64%;
+    }
+
+    .abdomen-l3 {
+        top: 63%;
+        left: 64%;
+      }
+    
+    .abdomen-l4 {
+        top: 66%;
+        left: 64%;
+      }
+  }
+  
+  /* Responsive styles */
+  @media (min-device-width: 481px) and  (max-width: 620px) {
+    .abdomen-title {
+      font-size: 2rem;
+    }
+  
+    .abdomen-image-container {
+      width: 90%; /* Scale image container for medium screens */
+    }
+  
+    .abdomen-hyperlink {
+      font-size: 0.8rem;
+    }
+  
+    .abdomen-t10 {
+      top: 39%; 
+      left: 82%;
+    }
+  
+    .abdomen-t11 {
+      top: 45.5%;
+      left: 82%;
+    }
+  
+    .abdomen-t12-l1 {
+      top: 54%;
+      left: 82%;
+    }
+  
+    .abdomen-l1 {
+      top: 62%;
+      left: 82%;
+    }
+  
+    .abdomen-l2 {
+      top: 68%;
+      left: 82%;
+    }
+
+    .abdomen-l3 {
+        top: 74%;
+        left: 82%;
+      }
+    
+      .abdomen-l4 {
+        top: 80%;
+        left: 82%;
+      }
+  }
+  
+  @media (max-width: 480px) {
+    .abdomen-title {
+      font-size: 1.5rem;
+    }
+  
+    .abdomen-image-container {
+      width: 100%; /* Full width for small screens */
+    }
+  
+    .abdomen-hyperlink {
+      font-size: 0.28rem;
+    }
+  
+    .abdomen-responsive-img {
+      width: 70%; /* Image scales down for small screens */
+    }
+  
+    .abdomen-t10 {
+      top: 28.5%; 
+      left: 81%;
+    }
+  
+    .abdomen-t11 {
+      top: 33.5%;
+      left: 81%;
+    }
+  
+    .abdomen-t12-l1 {
+      top: 38.4%;
+      left: 81%;
+    }
+  
+    .abdomen-l1 {
+      top: 42.8%;
+      left: 81%;
+    }
+  
+    .abdomen-l2 {
+      top: 47.2%;
+      left: 81%;
+    }
+
+    .abdomen-l1 {
+        top: 51%;
+        left: 81%;
+      }
+    
+      .abdomen-l2 {
+        top: 55%;
+        left: 81%;
+      }
+
+  }
+  
